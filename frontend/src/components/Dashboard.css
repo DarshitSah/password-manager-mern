@@ -1,0 +1,69 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a1f 0%, #1a0033 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 28px;
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 1150px;       
+  min-height: 760px;        
+  overflow: hidden;
+}
+
+.dashboard-header {
+  background: linear-gradient(90deg, #6b21a8, #a855f7);
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.dashboard-sidebar {
+  width: 280px;         
+  background: rgba(255,255,255,0.05);
+  padding: 45px 20px;
+  min-height: 660px;  
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.dashboard-menu-item {
+  padding: 16px 22px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ddd;
+  transition: all 0.3s;
+  font-size: 1.02rem;
+}
+
+.dashboard-menu-item:hover,
+.dashboard-menu-item.active {
+  background: rgba(139, 92, 246, 0.35);
+  color: white;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 40px 45px;
+  overflow-y: auto;
+}
+
+.dashboard-content h2 {
+  color: white;
+  font-size: 2.1rem;
+  margin-bottom: 8px;
+}

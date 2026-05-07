@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Global Styles */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
